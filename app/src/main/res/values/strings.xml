@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BrutusCrypt</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="cipherLabel">CIPHER</string>
+    <string name="messageLabel">Message to Decrypt</string>
+    <string name="decryptLabel">Decrypted Message</string>
+    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="decryptButton">Decrypt</string>
+
+</resources>

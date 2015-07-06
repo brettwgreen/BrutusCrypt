@@ -21,7 +21,7 @@ public class WordList  {
     }
 
     public boolean IsWordInList(String word) {
-        return words.contains(word);
+        return words.contains(word.toLowerCase());
     }
 
     private WordList() {

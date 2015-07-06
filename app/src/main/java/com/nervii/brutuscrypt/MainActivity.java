@@ -14,10 +14,11 @@ public class MainActivity extends AppCompatActivity {
     private void decryptMessage() {
         TextView message = (TextView)findViewById(R.id.message);
         String msg = message.getText().toString();
+        TextView code = (TextView)findViewById(R.id.code);
         TextView decryptedMessage = (TextView)findViewById(R.id.decryptedMessage);
-        if (WordList.getInstance().IsWordInList(msg.toLowerCase())) {
-            decryptedMessage.setText(msg);
-        }
+        CrackedPackage result = Decipher.CrackShiftCipher(msg);
+        code.setText(result.Cipher);
+        decryptedMessage.setText(result.DecryptedMessage);
     }
 
     @Override

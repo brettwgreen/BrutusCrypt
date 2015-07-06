@@ -18,6 +18,7 @@ public class WordListTest extends InstrumentationTestCase {
     }
 
     public void testIsWordInList() throws Exception {
-
+        WordList instance = WordList.getInstance();
+        assertTrue(instance.IsWordInList("Quick"));
     }
 }
